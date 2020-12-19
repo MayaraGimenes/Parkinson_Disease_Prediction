@@ -91,8 +91,8 @@ This section should list any major frameworks that you built your project using.
 ## Introduction
 
 Parkinson's disease (PD) is a neurodegenerative disorder of the central nervous system
-that aects movements and develops slowly over the years and the earlier you discover
-it the best results the patients may have doing the recommended treatment. PD aects
+that affects movements and develops slowly over the years and the earlier you discover
+it the best results the patients may have doing the recommended treatment. PD affects
 almost a million people in North America. Currently there is no cure, however there are
 several types of medication and therapy that may alleviate the symptoms. Research has
 proven that approximately 90% of the people with Parkinson's has voice impairment
@@ -103,6 +103,8 @@ tests including sustained phonations. All the speech sounds are freely available
 internet, and they were recorded using a microphone and analyzed using measurement
 methods to detect these signals [9]. All the results and parameters measured from the
 vocal impairments are listed in the Table 1.
+
+![](pictures/table1.JPG)
 
 ### Related Work
 
