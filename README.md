@@ -59,9 +59,17 @@
         <li><a href="#XGBoost">XGBoost</a></li> 
       </ul>
       </li>
-    <li><a href="#Results">Results</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#Results">Results</a>
+    <ul>
+        <li><a href="#Support-Vector-Machine">Support Vector Machine</a></li>
+        <li><a href="#Neural-Network">Neural Network</a></li>
+        <li><a href="#Support-Vector-Machine">SVM - Support Vector Machine</a></li>
+        <li><a href="#Random-Forest">Random Forest</a></li>
+        <li><a href="#XGBoost">XGBoost</a></li> 
+      </ul>
+    </li>
+    <li><a href="#Conclusion">Conclusion</a></li>
+    <li><a href="#References">References</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -264,6 +272,27 @@ In this section we present results for the test accuracy of each model by using 
 crossvalidation. By accuracy we mean the percentage of labels that were correctly
 classified.
 
+### Support Vector Machine
+In the Figure 2, we present the accuracy of the SVM model with Radial Basis Func-
+tion as a kernel. The "Selected Features Index" axis represents all the possible 210
+combinations of selected features. The maximum accuracy obtained is 85.89% by us-
+ing two features, PPE MDVPShimmer and PPE ShimmerAPQ5. It can be seen that
+depending on the selection, the accuracy drastically changes, therefore, it is important
+to make a proper selection of features.
+
+### Neural Network
+In the Figure 3 we have the results of using the Logistic Neural Network checking for
+the accuracy using different values of hidden nodes in 2 layers. The highest accuracy
+is 82.36% with 15 hidden nodes in Layer 1 and 20 hidden nodes in Layer 2.
+For ReLu Neural Network (Figure 4) the maximum accuracy is 83.39% with 35
+hidden nodes in Layer 1 and 40 hidden nodes in layer 2. This result is followed by an
+accuracy of 81.842% with 20 hidden nodes in layer 1 and 5 hidden nodes in layer 2. It
+is interesting to see that the result changes considerably depending on the amount of
+hidden nodes on each layer.
+For Tahn activation, best accuracy of 81.97% for 10 hidden nodes in layer 1 and 20
+hidden nodes in layer 2.
+The best performing neural network uses the logistic function with 15 hidden nodes
+in Layer 1 and 20 hidden nodes in Layer 2, with an accuracy of 82.36%.
 
 
 <!-- ROADMAP -->
