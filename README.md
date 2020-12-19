@@ -266,9 +266,7 @@ hidden nodes in layer 2.
 The best performing neural network uses the logistic function with 15 hidden nodes
 in Layer 1 and 20 hidden nodes in Layer 2, with an accuracy of 82.36%.
 
-![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png)
-
-<img src="https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png" alt="Figure 2.: SVM accuracy vs Selected features index" width="500">
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png  alt="Figure 2.: SVM accuracy vs Selected features index")
 
 ### Random Forest
 We showe the results for the random forest case in the Figure 6. The hyper parameter
