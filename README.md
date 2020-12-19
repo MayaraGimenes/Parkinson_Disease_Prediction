@@ -1,9 +1,4 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
+
 
 
 
@@ -15,13 +10,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 
 
 <!-- PROJECT LOGO -->
@@ -82,39 +70,54 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+In this report, we present an approach of Parkinson's disease(PD) prediction
+using modern machine learning techniques such as Support Vector Machine (SVM),
+Neural Networks, XGBoost and Random Forest. We used a dataset available online
+with voice variations of health individuals and patients with PD. Through correlated
+measures, we selected the 10 most correlated features, then we evaluated the model
+using the k-fold cross validation method leading to the best accuracy of 89.65%
+using kernel support vector machine and XGBoost.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
+### Key Words
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
+* [Python](https://www.python.org)
+* [scikit-learn](https://scikit-learn.org/stable/)
+* [XGBoost] ()
+* [Support Vector Machine]() 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Introduction
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Parkinson's disease (PD) is a neurodegenerative disorder of the central nervous system
+that aects movements and develops slowly over the years and the earlier you discover
+it the best results the patients may have doing the recommended treatment. PD aects
+almost a million people in North America. Currently there is no cure, however there are
+several types of medication and therapy that may alleviate the symptoms. Research has
+proven that approximately 90% of the people with Parkinson's has voice impairment
+[6], [7]. This distortion on the voice maybe be an early stage of the illness [8] and its
+measurement is a non invasive way to predict the probability of PD. To determine
+if the patient presents voice impairment it is necessary to perform various sets of
+tests including sustained phonations. All the speech sounds are freely available on the
+internet, and they were recorded using a microphone and analyzed using measurement
+methods to detect these signals [9]. All the results and parameters measured from the
+vocal impairments are listed in the Table 1.
 
-### Prerequisites
+### Related Work
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+This project is based on the paper "Exploiting Nonlinear Recurrence and Fractal Scal-
+ing Properties for Voice Disorder Detection', Little MA, McSharry PE, Roberts SJ,
+Costello DAE, Moroz IM", where they present a study using nonstandard measures
+(Dysphonia measurements) to discriminate healthy people from patients with Parkin-
+son's disease. The authors used the same dataset, a collection of phonations from 31 people, and 23 with PD. In their work they used the most uncorrelated measures to
+train the system, achieving a performance of 91.4% using kernel vector machine. The
+authors use bootstrap re-sampling as a cross validation method, whereas this work
+uses the 10-fold cross validation, therefore the results are not directly comparable.
+The k-fold cross validation was chosen due to its popularity and reliability.
+This report focuses on the work of using the same dataset, but applying three more
+classification methods (XGBoost, Neural Network, Random Forest) in addition to the
+Support Vector Machine (SVM), which was implemented on the mentioned paper.
 
 ### Installation
 
