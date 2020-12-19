@@ -67,8 +67,7 @@ using kernel support vector machine and XGBoost.
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org)
 * [scikit-learn](https://scikit-learn.org/stable/)
-* [XGBoost] ()
-* [Support Vector Machine]() 
+ 
 
 
 <!-- GETTING STARTED -->
@@ -266,6 +265,31 @@ For Tahn activation, best accuracy of 81.97% for 10 hidden nodes in layer 1 and 
 hidden nodes in layer 2.
 The best performing neural network uses the logistic function with 15 hidden nodes
 in Layer 1 and 20 hidden nodes in Layer 2, with an accuracy of 82.36%.
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png)
+
+<img src="https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png" alt="gramm example" width="800">
+
+### Random Forest
+We showe the results for the random forest case in the Figure 6. The hyper parameter
+selected to be tuned is the number of estimators used. In this case, the best value of
+accuracy obtained is 85.47% with 400 estimators.
+
+### XGBoost
+Figure 7 shows that for XGBoost method we achieved an accuracy of 89.657% with
+the following features Spread1, Spread2 and MDVPFo.
+
+## Conclusion
+In the Table 2 we can see the best performance obtained by each machine learn-
+ing method. There is a considerably difference between the methods, as well as the
+complexity of finding good values. It is interesting to see that two best methods (XG-
+Boost and SVM) have their peak performance with by using different features. We can
+conclude that among all modern machine learning methods presented on this paper,
+XGBoost had the best performance overall. That method has accuracy of 89.65%,
+meaning that there is a probability of almost 10% for the system to making a mistake
+on the classification if a person has Parkinson's disease. While this might seen high,
+it is very close to the one presented by the paper that inspired this work, even though
+we use a different cross validation technique (k-fold).
 
 
 <!-- ROADMAP -->
