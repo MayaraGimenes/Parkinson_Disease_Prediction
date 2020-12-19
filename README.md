@@ -252,6 +252,10 @@ ing two features, PPE MDVPShimmer and PPE ShimmerAPQ5. It can be seen that
 depending on the selection, the accuracy drastically changes, therefore, it is important
 to make a proper selection of features.
 
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png)
+
+Figure 2.: SVM accuracy vs Selected features index
+
 ### Neural Network
 In the Figure 3 we have the results of using the Logistic Neural Network checking for
 the accuracy using different values of hidden nodes in 2 layers. The highest accuracy
@@ -266,21 +270,29 @@ hidden nodes in layer 2.
 The best performing neural network uses the logistic function with 15 hidden nodes
 in Layer 1 and 20 hidden nodes in Layer 2, with an accuracy of 82.36%.
 
-Figure 2.: SVM accuracy vs Selected features index
-
-![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png)
-
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/LogiNN.png)
 
 Figure 3.: Logistic Neural Network.
 (a) Accuracy with different numbers of hidden layers
 
-![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/LogiNN.png)
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/ReluNN.png)
 
+(a) Accuracy with different number of hidden nodes
+Figure 4.: ReLu Neural Network Accuracy.
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/TanhNN.png)
+
+(a) Accuracy with different number of hidden nodes
+Figure 5.: Tahn Neural Network Accuracy
 
 ### Random Forest
 We showe the results for the random forest case in the Figure 6. The hyper parameter
 selected to be tuned is the number of estimators used. In this case, the best value of
 accuracy obtained is 85.47% with 400 estimators.
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/RF.png)
+
+Figure 6.: Random Forest accuracy vs Number of Estimators
 
 ### XGBoost
 Figure 7 shows that for XGBoost method we achieved an accuracy of 89.657% with
@@ -297,6 +309,10 @@ meaning that there is a probability of almost 10% for the system to making a mis
 on the classification if a person has Parkinson's disease. While this might seen high,
 it is very close to the one presented by the paper that inspired this work, even though
 we use a different cross validation technique (k-fold).
+
+Table 2.: Comparison of best accuracy obtained by each model
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/table2.JPG)
 
 
 <!-- ROADMAP -->
