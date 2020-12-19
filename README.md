@@ -277,13 +277,14 @@ Figure 3.: Logistic Neural Network.
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/ReluNN.png)
 
-(a) Accuracy with different number of hidden nodes
 Figure 4.: ReLu Neural Network Accuracy.
+(a) Accuracy with different number of hidden nodes
+
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/TanhNN.png)
 
-(a) Accuracy with different number of hidden nodes
 Figure 5.: Tahn Neural Network Accuracy
+(a) Accuracy with different number of hidden nodes
 
 ### Random Forest
 We showe the results for the random forest case in the Figure 6. The hyper parameter
@@ -297,6 +298,11 @@ Figure 6.: Random Forest accuracy vs Number of Estimators
 ### XGBoost
 Figure 7 shows that for XGBoost method we achieved an accuracy of 89.657% with
 the following features Spread1, Spread2 and MDVPFo.
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/XGBoost.png)
+
+Figure 7.: XGBoost accuracy vs Selected Features Index [ht]
+
 
 ## Conclusion
 In the Table 2 we can see the best performance obtained by each machine learn-
