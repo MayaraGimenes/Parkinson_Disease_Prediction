@@ -9,7 +9,4 @@ measures, we selected the 10 most correlated features, then we evaluated the mod
 using the k-fold cross validation method leading to the best accuracy of 89.65%
 using kernel support vector machine and XGBoost.
 
-2 paragraphs towards the end of your blog
-One on --->  answering the 3 questions you started with.
-Second one one ----> Your 3 learning outcomes out of the project
-
+![alt text](https://github.com/MayaraGimenes/CISC849_FinalProject/tree/main/Pictures/XGBoost.png?raw=true)
