@@ -136,6 +136,7 @@ they have similar aspects. On table I we can verify that Jitter(%) is very simil
 Jitter(ABS), they derive from pitch period sequences, and because of their similarity
 (correlation) only one of them will really contribute to the classification, consequently
 the other one should be removed.
+
 We divide the calculation of feature by selecting the 10 most correlated features (ab-
 solute value of correlation between feature and output label). We sort the correlation
 based on its absolute value because zero correlation means almost no information,
@@ -147,6 +148,7 @@ be [-0.5, 0.3 and -0.25] and these will be selected to the training and test set
 next sections we will describe the classifications tested on this work. All testing and
 plots of the data and correlation between each feature and the label can be seem on
 figure 1. All 10 features selected are shown on Table 1.
+
 Evaluating the model can be really trick, since we usually split the data set into
 training and testing and we evaluate the performance based on a error metric to
 determine the accuracy. However this method is not reliable enough with the amount
@@ -159,6 +161,7 @@ the model; in the second iteration the second fold is used to test the model and
 rest is used to train the model, and this process repeat for each fold until we have all
 10 tested. The accuracy of each fold is averaged and that is the final performance of
 the model.
+
 To implement all the classifications on this work, we used the scikit-learn features
 for Python [1]. Scikit-learn is an open source machine learning library that supports
 supervised and unsupervised learning and provides tools for model fitting, model se-
@@ -173,6 +176,7 @@ measure, and each row corresponds one of 195 voice recording from these individu
 ("name" column). The main goal of the data is to discriminate healthy people from
 those with PD, according to "status" column which is set to 0 for healthy and 1 for
 PD.
+
 The data is in ASCII CSV format. The rows of the CSV file contain an instance
 corresponding to one voice recording. There are around six recordings per patient, the
 name of the patient is identified in the first column.
@@ -186,6 +190,7 @@ are its efficiency in high dimensional spaces, memory eficiency, and simplicity.
 SVM constructs a hyper-plane in multidimensional space to separate different
 classes. It optimizes this hyper-plane to minimize the error and best divide the data
 sets.
+
 The main objective here was to separate the data set the best possible way by
 selecting a hyper-plane with the maximum possible margin between the vectors and
 the data points. The algorithm is implemented using a kernel that will shape the
@@ -202,16 +207,19 @@ results in better models. The difference between random forest and decision tree
 that the process of finding the root node and splitting the features will be a random
 process on random forests. First we create the random forest and then we make the a
 prediction of the classifiers. The algorithm is shown below:
+
  Select N features from a total of Z features
 * Of all the selected N features it will calculate a node d using the best split point
 * Split nodes into more nodes using the best split point
 * Repeat the items above until the best number D of nodes has been reached
 * Build the forest repeating the steps for x number of times to create x number of
 trees
+
 There were some important parameter to check while implementing the algorithm.One
 of those is the number of trees we want to implement, so the average of predictions
 was measured multiple times guaranteeing that we would have the optimal number of
 trees.
+
 The biggest advantages of random forest is its versatility, since it can be used both
 for regression and classification, the hyper-parameter that are pretty straightforward
 to use. Nevertheless, the biggest problem with this classifier is that a large number of
@@ -225,7 +233,9 @@ on the value on their input. In order to get activated, each perceptron depends 
 the weights of the connections with its inputs, as well as on the activation function
 chosen for a given model. The network is arranged in a way that layers of perceptrons
 are constructed and trained in order to decrease the error between estimated output
-and test output. As the error decreases, it should also be able to generalize well for
+and test output.
+
+As the error decreases, it should also be able to generalize well for
 unknown inputs (test data). In this work we implemented a multi layer perceptron
 using backpropagation, a procedure that adjusts the weights repeatedly so we can
 minimize the diffence between the output and the desired output. We also test
