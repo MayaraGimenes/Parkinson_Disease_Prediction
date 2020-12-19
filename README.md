@@ -146,7 +146,7 @@ correlation we get [0.2, 0.3, 0.15, -0.5, -0.25] the most three correlated numbe
 be [-0.5, 0.3 and -0.25] and these will be selected to the training and test set. In the
 next sections we will describe the classifications tested on this work. All testing and
 plots of the data and correlation between each feature and the label can be seem on
-gure 1. All 10 features selected are shown on Table 1.
+figure 1. All 10 features selected are shown on Table 1.
 Evaluating the model can be really trick, since we usually split the data set into
 training and testing and we evaluate the performance based on a error metric to
 determine the accuracy. However this method is not reliable enough with the amount
@@ -193,11 +193,63 @@ given data on the correct form. In this work, the best option would be the radia
 function kernel (also known as Gaussian kernel). It can map an input space in innite
 dimensional space.
 
-## Usage
+### Random Forest
+Random forest [2] is another supervised learning algorithm used in classification prob-
+lems. It creates decision trees on random data samples, receives a prediction from each
+tree and select the best solution. It also adds additionally randomness to the selected
+model and it searches for the best feature among our subset, this way it generally
+results in better models. The difference between random forest and decision trees is
+that the process of finding the root node and splitting the features will be a random
+process on random forests. First we create the random forest and then we make the a
+prediction of the classifiers. The algorithm is shown below:
+ Select N features from a total of Z features
+* Of all the selected N features it will calculate a node d using the best split point
+* Split nodes into more nodes using the best split point
+* Repeat the items above until the best number D of nodes has been reached
+* Build the forest repeating the steps for x number of times to create x number of
+trees
+There were some important parameter to check while implementing the algorithm.One
+of those is the number of trees we want to implement, so the average of predictions
+was measured multiple times guaranteeing that we would have the optimal number of
+trees.
+The biggest advantages of random forest is its versatility, since it can be used both
+for regression and classification, the hyper-parameter that are pretty straightforward
+to use. Nevertheless, the biggest problem with this classifier is that a large number of
+trees can make the algorithm really slow.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Neural Networks
+Neural networks are graph models inspired in biological neural networks present on
+the human brain. It is built by an ensemble of nodes called perceptrons, which sum
+the output of the nodes connected to them and get "activated" (or not) depending
+on the value on their input. In order to get activated, each perceptron depends on
+the weights of the connections with its inputs, as well as on the activation function
+chosen for a given model. The network is arranged in a way that layers of perceptrons
+are constructed and trained in order to decrease the error between estimated output
+and test output. As the error decreases, it should also be able to generalize well for
+unknown inputs (test data). In this work we implemented a multi layer perceptron
+using backpropagation, a procedure that adjusts the weights repeatedly so we can
+minimize the diffence between the output and the desired output. We also test
+repeatedly several numbers of hidden layers so it can achieve the best accuracy.
+We set the parameters of our NN to get the best value. To optimize our network we
+chose as our solver the Adam Algorithm [3], a very popular deep learning optimization method. The activation function is responsible for transforming the sum of the inputs
+from the nodes into the activation of the node. In this work, we explore the rectifi
+linear activation function (relu - a linear function that will output the input if positive,
+otherwise, will output zero), hyperbolic tangent, and logistic function.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### XGBoost
+XGBoost [4] is an optimized gradient boosting library designed to be efficient, 
+exible nd portable. It implements machine learning algorithms under the gradient boosting
+framework. A gradient boosting framework is a technique for regression and classification problems, that produces a prediction model in the form of decision trees. New
+models are created predicting residual errors of the prior models, eventually this errors
+are added to build the final prediction and it uses gradient descendent to minimize the
+when adding new models (also known as weak model algorithm). Its algorithm was
+created to reach for efficiency of compute time and memory resources.
+
+## Results 
+
+In this section we present results for the test accuracy of each model by using 10-fold
+crossvalidation. By accuracy we mean the percentage of labels that were correctly
+classified.
 
 
 
