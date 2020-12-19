@@ -47,16 +47,19 @@
         <li><a href="#Key-words">Key Words</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#Introduction">Introduction</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+    <li><a href="#Introduction">Introduction</a></li>
+    <li><a href="#Related-Work">Related Work</a></li>
+    <li><a href="#Methods">Methods</a>
+    <ul>
+        <li><a href="#Feature-Calculation">Feature Calculation</a></li>
+        <li><a href="#The-Dataset">The Dataset</a></li>
+        <li><a href="#Support-Vector-Machine">SVM - Support Vector Machine</a></li>
+        <li><a href="#Random-Forest">Random Forest</a></li>
+        <li><a href="#Neural-Networks">Neural Networks</a></li>
+        <li><a href="#XGBoost">XGBoost</a></li> 
       </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+      </li>
+    <li><a href="#Results">Results</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
