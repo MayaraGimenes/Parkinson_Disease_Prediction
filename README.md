@@ -439,7 +439,6 @@ Contributions are what make the open source community such an amazing place to b
 
 ## 
 
-[7]: <https://colab.research.google.com/drive/1fxLPRrO-8_fBCmX4jUaepxO2V_S1qkmo?usp=sharing> "ParkPred Notebook"
 
 <!-- LICENSE -->
 <!-- ## License
@@ -457,7 +456,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -469,7 +468,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [Font Awesome](https://fontawesome.com) -->
 
 
 
