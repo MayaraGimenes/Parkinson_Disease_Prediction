@@ -132,7 +132,7 @@ correlation we get [0.2, 0.3, 0.15, -0.5, -0.25] the most three correlated numbe
 be [-0.5, 0.3 and -0.25] and these will be selected to the training and test set. In the
 next sections we will describe the classifications tested on this work. All testing and
 plots of the data and correlation between each feature and the label can be seem on
-figure 1. All 10 features selected are shown on Table 1.
+the code or the file 'pictures' on this github. All 10 features selected are shown on Table 1.
 
 Evaluating the model can be really trick, since we usually split the data set into
 training and testing and we evaluate the performance based on a error metric to
