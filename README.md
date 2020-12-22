@@ -26,27 +26,27 @@
     <ul>
         <li><a href="#Feature-Calculation">Feature Calculation</a></li>
         <li><a href="#The-Dataset">The Dataset</a></li>
-        <li><a href="#Support-Vector-Machine">SVM - Support Vector Machine</a></li>
+        <li><a href="#Support-Vector-Machine">Support Vector Machine</a></li>
         <li><a href="#Random-Forest">Random Forest</a></li>
         <li><a href="#Neural-Networks">Neural Networks</a></li>
         <li><a href="#XGBoost">XGBoost</a></li> 
-        <li><a href="#Naive Bayes">Naive Bayes</a></li> 
-        <li><a href="#TPOT">TPOT</a></li> 
-        <li><a href="#Hybrids">Hybrids</a></li> 
+        <li><a href="#Naive-Bayes">Naive Bayes</a></li> 
+        <li><a href="#TPOT-AutoML">TPOT AutoML</a></li> 
       </ul>
       </li>
+    <li><a href="#Implementation">Implementation</a>
     <li><a href="#Results">Results</a>
     <ul>
-        <li><a href="#Support-Vector-Machine-R">SVM - Support Vector Machine</a></li>
-        <li><a href="#Neural-Networks-R">Neural Network</a></li>
-        <li><a href="#Random-Forest-R">Random Forest</a></li>
-        <li><a href="#XGBoost-R">XGBoost</a></li> 
-        <li><a href="#Naive-Bayes-R">Naive Bayes</a></li> 
-        <li><a href="#TPOT-R">TPOT</a></li> 
+        <li><a href="#SVM">SVM</a></li>
+        <li><a href="#NN">NN</a></li>
+        <li><a href="#RF">RF</a></li>
+        <li><a href="#XGB">XGB</a></li> 
+        <li><a href="#NB">Naive Bayes</a></li> 
+        <li><a href="#TPOT">TPOT</a></li> 
       </ul>
     </li>
-    <li><a href="#Conclusion">Conclusion</a></li>
     <li><a href="#Futuree-Work">Future Work</a></li>
+    <li><a href="#Conclusion">Conclusion</a></li>
     <li><a href="#References">References</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -166,7 +166,7 @@ The data is in ASCII CSV format. The rows of the CSV file contain an instance
 corresponding to one voice recording. There are around six recordings per patient, the
 name of the patient is identified in the first column.
 
-### SVM - Support Vector Machine
+### Support Vector Machine
 For each combination selected we will apply SVM classification. SVM is a supervised
 machine learning model that uses classification algorithms for a group of classification
 models. SVM offers high accuracy compared to other classifiers and there are some
@@ -269,7 +269,7 @@ distributions means that each distribution can be independently estimated as a o
 distribution. This helps alleviate problems stemming from the curse of dimensionality, 
 such as the need for data sets that scale exponentially with the number of features. 
 
-### TPOT
+### TPOT AutoM
 
 TPOT is an open-source library for performing AutoML in Python. It makes use of the popular 
 Scikit-Learn machine learning library for data transforms and machine learning algorithms 
@@ -286,14 +286,29 @@ to the NSGA-II selection scheme.  Each of the top 20 selected pipelines produce 
 with another offspring using one-point crossover, then 90% of the remaining unaffected 
 offspring are randomly changed by a point, insert, or shrink mutation (1/3 chance of each).
 
+## Implementation
+We have implemented our project using Google Colab, this allows for others to run the 
+program with minimal setup Colab notebooks allow you to combine executable code and rich 
+text in a single document. Colab allows anybody to write and execute arbitrary python code 
+through the browser, and is especially well suited to machine learning, data analysis and 
+education. This [Notebook](https://colab.research.google.com/drive/1fxLPRrO-8_fBCmX4jUaepxO2V_S1qkmo?usp=sharing) [7]
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/ColabN.png)
+
+<ol>
+<li>Check that the Colab instance is connected and running, a green checkmark indicates that everything is in order</li>
+<li>You can "Run all" to execute the notebook</li>
+<li>The generated plots are stored in the directory</li>
+<li>It is also possible to run independent cells of the notebook</li>
+</ol>
 
 ## Results 
 
 In this section we present results for the test accuracy of each model by using 10-fold
 crossvalidation. By accuracy we mean the percentage of labels that were correctly
-classified.
+classified. 
 
-### Support Vector Machine
+### SVM
 In the Figure 2, we present the accuracy of the SVM model with Radial Basis Function 
 as a kernel. The "Selected Features Index" axis represents all the possible 210
 combinations of selected features. The maximum accuracy obtained is 85.89% by using 
@@ -305,7 +320,7 @@ a proper selection of features.
 
 Figure 2.: SVM accuracy vs Selected features index
 
-### Neural Network
+### NN
 In the Figure 3 we have the results of using the Logistic Neural Network checking for
 the accuracy using different values of hidden nodes in 2 layers. The highest accuracy
 is 82.36% with 15 hidden nodes in Layer 1 and 20 hidden nodes in Layer 2.
@@ -335,7 +350,7 @@ Figure 4.: ReLu Neural Network Accuracy.
 Figure 5.: Tahn Neural Network Accuracy
 (a) Accuracy with different number of hidden nodes
 
-### Random Forest
+### RF
 We showe the results for the random forest case in the Figure 6. The hyper parameter
 selected to be tuned is the number of estimators used. In this case, the best value of
 accuracy obtained is 85.47% with 400 estimators.
@@ -344,23 +359,23 @@ accuracy obtained is 85.47% with 400 estimators.
 
 Figure 6.: Random Forest accuracy vs Number of Estimators
 
-### XGBoost
+### XGB
 Figure 7 shows that for XGBoost method we achieved an accuracy of 89.657% with
 the following features Spread1, Spread2 and MDVPFo.
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/XGBoost.png)
 
-Figure 7.: XGBoost accuracy vs Selected Features Index [ht]
+Figure 7.: XGBoost accuracy vs Selected Features Index
 
-### Naive Bayes
+### NB
 The program generates Naive Bayes models based on the combinatory of the selected features. 
 Starting with one feature, the program increases the number of features and test all possible 
 combinatons. Figure 8 shows the performance of each model, the best model with an accuracy of 
-84.39% uses only one feature RPDE, the feature with the highest correla. 
+84.39% uses only one feature RPDE, the feature with the highest correlation. 
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/NaiveBayes.png)
 
-Figure 8.: Naive Bayes accuracy vs Selected Features Index [ht]
+Figure 8.: Naive Bayes accuracy vs Selected Features Index
 
 ### TPOT
 We define the classifier to have a hundred generation with a population of a hundred each
@@ -370,6 +385,18 @@ is Gradient Boosting Classifier, with an accuracy of 85.25%.
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/TPOT.png)
 
 Figure 9.: TPOT Accuracy vs Number of Generations
+
+This repository includes the pipeline generated after a hundred generations, the program
+"tpot_pipeline_G100.py" is also one of the outputs of TPOT.
+
+## Future Work
+Although this project was meant to be a practical experience using ML tools, this analysis 
+can be used to develop hybrid models based on those that have performed the best or to 
+further tune them and improve their performance. It is also important to point out that the 
+database is small, limiting the reach of the models. This kind of ML applications can be used 
+to develop fast and innexpensive ways for early diagnosis, allowing the implementation in 
+devices like smartphones. Once the model is trained, the inference phase can be carried out 
+in a less powerful device.
 
 ## Conclusion
 In the Table 2 we can see the best performance obtained by each machine learn-
@@ -386,6 +413,10 @@ we use a different cross validation technique (k-fold).
 Table 2.: Comparison of best accuracy obtained by each model
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/table2.JPG)
+
+Figure 10.: Comparison of best accuracy obtained by each model
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/Results.png)
 
 
 <!-- ROADMAP -->
@@ -408,6 +439,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## 
 
+[7]: <https://colab.research.google.com/drive/1fxLPRrO-8_fBCmX4jUaepxO2V_S1qkmo?usp=sharing> "ParkPred Notebook"
 
 <!-- LICENSE -->
 <!-- ## License
@@ -458,3 +490,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
+
+
+
