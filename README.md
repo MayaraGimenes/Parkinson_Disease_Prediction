@@ -1,10 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
 
-  <h1 align="center">Parkinson's Disease Prediction Based on Modern Machine Learning Methods</h1>
+  <h1 align="center">Parkinson's Disease Prediction Based on <br />Modern Machine Learning Methods</h1>
 
   <p align="center">
-    Mayara Gimenes De Souza
+    Mayara Gimenes De Souza <br />
+    Diego Andres Roa Perdomo
 </p>
 
 
@@ -42,10 +43,10 @@
         <li><a href="#XGBoost-R">XGBoost</a></li> 
         <li><a href="#Naive-Bayes-R">Naive Bayes</a></li> 
         <li><a href="#TPOT-R">TPOT</a></li> 
-        <li><a href="#Hybrids-R">Hybrids</a></li> 
       </ul>
     </li>
     <li><a href="#Conclusion">Conclusion</a></li>
+    <li><a href="#Futuree-Work">Future Work</a></li>
     <li><a href="#References">References</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
@@ -58,10 +59,11 @@
 
 In this report, we present an approach of Parkinson's disease(PD) prediction
 using modern machine learning techniques such as Support Vector Machine (SVM),
-Neural Networks, XGBoost, Random Forest and Naive Bayes. We used a dataset available online
-with voice variations of health individuals and patients with PD. Through correlated
-measures, we selected the 10 most correlated features, then we evaluated the model
-using the k-fold cross validation method leading to the best accuracy of 89.65%
+Neural Networks, XGBoost, Random Forest, Naive Bayes and automatic ML generation 
+with TPOT. We used a dataset available online with voice variations of health 
+individuals and patients with PD. Through correlated measures, we selected the 
+10 most correlated features, then we evaluated the model using the k-fold cross 
+validation method leading to the best accuracy of 89.65%
 using kernel support vector machine and XGBoost.
 
 ### Key Words
