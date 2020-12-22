@@ -411,7 +411,7 @@ Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
          and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
          Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.Scikit-learn: Machine Learning in {P}ython, Journal of Machine Learning Research; 2011 Volume 12, p. 2825--2830
          
-<a id="2">[2]</a>       
+<a id="2">[2]</a>
 Breiman, “Random Forests”, Machine Learning, 45(1), 5-32, 2001.
 
 <a id="3">[3]</a> 
