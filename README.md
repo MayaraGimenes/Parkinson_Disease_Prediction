@@ -410,13 +410,13 @@ on the classification if a person has Parkinson's disease. While this might seen
 it is very close to the one presented by the paper that inspired this work, even though
 we use a different cross validation technique (k-fold).
 
-Table 2.: Comparison of best accuracy obtained by each model
-
-![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/Results2.png)
-
 Figure 10.: Comparison of best accuracy obtained by each model
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/Results.png)
+
+Table 2.: Comparison of best accuracy obtained by each model
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/Results2.png)
 
 
 <!-- ROADMAP -->
