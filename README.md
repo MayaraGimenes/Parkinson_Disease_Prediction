@@ -399,16 +399,8 @@ devices like smartphones. Once the model is trained, the inference phase can be 
 in a less powerful device.
 
 ## Conclusion
-In the Table 2 we can see the best performance obtained by each machine learn-
-ing method. There is a considerably difference between the methods, as well as the
-complexity of finding good values. It is interesting to see that two best methods (XG-
-Boost and SVM) have their peak performance with by using different features. We can
-conclude that among all modern machine learning methods presented on this paper,
-XGBoost had the best performance overall. That method has accuracy of 89.65%,
-meaning that there is a probability of almost 10% for the system to making a mistake
-on the classification if a person has Parkinson's disease. While this might seen high,
-it is very close to the one presented by the paper that inspired this work, even though
-we use a different cross validation technique (k-fold).
+In the Table 2 we show the best performance obtained by experimenting with each of the machine learning methods that we used. There is a considerably difference between the methods, as well as the complexity of finding good values. It is interesting to see that the two best methods (XG- Boost and SVM) have their best perofrmace by using different features as shown in the table.
+We can conclude that among all modern machine learning methods presented in this paper we referred to, our experiments show that XGBoost had the best performance overall. That method has an accuracy of 89.65%, meaning that there is a probability of almost 10% for the system to making an error on the classification if a person has Parkinson’s disease. While this might seem high, it is very close to the one presented in the paper where the authors show that the best accuracy was achieved by kernel SVM. The paper’s findings inspired our work, even though we use a different cross validation technique (k-fold) for our experiments, whereas the paper uses kernel support vector machine validation technique.
 
 Figure 10.: Comparison of best accuracy obtained by each model
 
