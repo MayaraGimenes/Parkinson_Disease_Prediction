@@ -87,8 +87,8 @@ measurement is a non invasive way to predict the probability of PD. To determine
 if the patient presents voice impairment it is necessary to perform various sets of
 tests including sustained phonations. All the speech sounds are freely available on the
 internet, and they were recorded using a microphone and analyzed using measurement
-methods to detect these signals [9]. All the results and parameters measured from the
-vocal impairments are listed in the Table 1.
+methods to detect these signals [9]. We have listed results and parameters measured from the
+vocal impairments. All of them are listed in the Table 1.
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/table1.JPG)
 
