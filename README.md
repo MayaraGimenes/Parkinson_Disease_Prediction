@@ -47,6 +47,7 @@
     </li>
     <li><a href="#Conclusion">Conclusion</a></li>
     <li><a href="#References">References</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -65,6 +66,7 @@ using kernel support vector machine and XGBoost.
 
 ### Key Words
 
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org)
 * [scikit-learn](https://scikit-learn.org/stable/)
 
@@ -130,7 +132,7 @@ correlation we get [0.2, 0.3, 0.15, -0.5, -0.25] the most three correlated numbe
 be [-0.5, 0.3 and -0.25] and these will be selected to the training and test set. In the
 next sections we will describe the classifications tested on this work. All testing and
 plots of the data and correlation between each feature and the label can be seem on
-the code or the file 'pictures' on this github. All 10 features selected are shown on Table 1.
+figure 1. All 10 features selected are shown on Table 1.
 
 Evaluating the model can be really trick, since we usually split the data set into
 training and testing and we evaluate the performance based on a error metric to
@@ -402,43 +404,55 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## References
+## 
 
-<!-- References -->
-<a id="1">[1]</a> 
-Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
-         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
-         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
-         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.Scikit-learn: Machine Learning in {P}ython, Journal of Machine Learning Research; 2011 Volume 12, p. 2825--2830
-         
-<a id="2">[2]</a>
-Breiman, “Random Forests”, Machine Learning, 45(1), 5-32, 2001.
 
-<a id="3">[3]</a> 
-Diederik P. Kingma and Jimmy Lei Ba. Adam : A method for stochastic optimization. 2014. arXiv:1412.6980v9
+<!-- LICENSE -->
+<!-- ## License
 
-<a id="4">[4]</a> 
-"GitHub project webpage - https://github.com/dmlc/xgboost".
+Distributed under the MIT License. See `LICENSE` for more information. -->
 
-<a id="5">[5]</a> 
-'Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection', 
-Little MA, McSharry PE, Roberts SJ, Costello DAE, Moroz IM. 
-BioMedical Engineering OnLine 2007, 6:23 (26 June 2007)
 
-<a id="6">[6]</a> 
-A. K. Ho, R. Iansek, C.Marigliani, J. L. Bradshaw, and S. Gates, “Speech
-impairment in a large sample of patients with Parkinson’s disease,” Behav.
-Neurol., vol. 11, pp. 131–137, 1998.
 
-<a id="7">[7]</a> 
-J. A. Logemann, H. B. Fisher, B. Boshes, and E. R. Blonsky, “Frequency
-and co-occurrence of vocal-tract dysfunctions in speech of a large sample
-of Parkinson patients,” J. Speech. Hear. Disord., vol. 43, pp. 47–57, 1978.
+<!-- CONTACT -->
+<!-- ## Contact
 
-<a id="8">[8]</a> 
-J. R. Duffy, Motor Speech Disorders: Substrates, Differential Diagnosis,
-and Management, 2nd ed. St. Louis, MO: Elsevier, 2005.
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-<a id="9">[9]</a> 
-Max A. Little, Member, IEEE, Patrick E. McSharry, Eric J. Hunter, Jennifer Spielman, and Lorraine O. Ramig. Suitability of Dysphonia Measurements
-for Telemonitoring of Parkinson’s Disease;IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING, VOL. 56, NO. 4, APRIL 2009.
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com)
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
