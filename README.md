@@ -1,8 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 
-  <h3 align="center">Parkinson's Disease Prediction Based on Modern Machine Learning
-Methods</h3>
+  <h1 align="center">Parkinson's Disease Prediction Based on Modern Machine Learning Methods</h1>
 
   <p align="center">
     Mayara Gimenes De Souza
@@ -30,15 +29,20 @@ Methods</h3>
         <li><a href="#Random-Forest">Random Forest</a></li>
         <li><a href="#Neural-Networks">Neural Networks</a></li>
         <li><a href="#XGBoost">XGBoost</a></li> 
+        <li><a href="#Naive Bayes">Naive Bayes</a></li> 
+        <li><a href="#TPOT">TPOT</a></li> 
+        <li><a href="#Hybrids">Hybrids</a></li> 
       </ul>
       </li>
     <li><a href="#Results">Results</a>
     <ul>
-        <li><a href="#Support-Vector-Machine">Support Vector Machine</a></li>
-        <li><a href="#Neural-Network">Neural Network</a></li>
-        <li><a href="#Support-Vector-Machine">SVM - Support Vector Machine</a></li>
-        <li><a href="#Random-Forest">Random Forest</a></li>
-        <li><a href="#XGBoost">XGBoost</a></li> 
+        <li><a href="#Support-Vector-Machine-R">SVM - Support Vector Machine</a></li>
+        <li><a href="#Neural-Networks-R">Neural Network</a></li>
+        <li><a href="#Random-Forest-R">Random Forest</a></li>
+        <li><a href="#XGBoost-R">XGBoost</a></li> 
+        <li><a href="#Naive-Bayes-R">Naive Bayes</a></li> 
+        <li><a href="#TPOT-R">TPOT</a></li> 
+        <li><a href="#Hybrids-R">Hybrids</a></li> 
       </ul>
     </li>
     <li><a href="#Conclusion">Conclusion</a></li>
@@ -52,11 +56,9 @@ Methods</h3>
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 In this report, we present an approach of Parkinson's disease(PD) prediction
 using modern machine learning techniques such as Support Vector Machine (SVM),
-Neural Networks, XGBoost and Random Forest. We used a dataset available online
+Neural Networks, XGBoost, Random Forest and Naive Bayes. We used a dataset available online
 with voice variations of health individuals and patients with PD. Through correlated
 measures, we selected the 10 most correlated features, then we evaluated the model
 using the k-fold cross validation method leading to the best accuracy of 89.65%
@@ -67,7 +69,6 @@ using kernel support vector machine and XGBoost.
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org)
 * [scikit-learn](https://scikit-learn.org/stable/)
- 
 
 
 <!-- GETTING STARTED -->
@@ -95,7 +96,8 @@ This project is based on the paper "Exploiting Nonlinear Recurrence and Fractal 
 ing Properties for Voice Disorder Detection', Little MA, McSharry PE, Roberts SJ,
 Costello DAE, Moroz IM", where they present a study using nonstandard measures
 (Dysphonia measurements) to discriminate healthy people from patients with Parkin-
-son's disease. The authors used the same dataset, a collection of phonations from 31 people, and 23 with PD. In their work they used the most uncorrelated measures to
+son's disease. The authors used the same dataset, a collection of phonations from 
+31 people, and 23 with PD. In their work they used the most uncorrelated measures to
 train the system, achieving a performance of 91.4% using kernel vector machine. The
 authors use bootstrap re-sampling as a cross validation method, whereas this work
 uses the 10-fold cross validation, therefore the results are not directly comparable.
@@ -115,13 +117,13 @@ these methods don't provide hyper-parameters that can be tuned during training. 
 the other scenarios (Random Forest and Neural Networks), we choose to use all 10
 features and change the hyper parameters from each model. In order to choose 10 out
 of the 24 features, we notice that many features are correlated to each other, since
-they have similar aspects. On table I we can verify that Jitter(%) is very similar from
+they have similar aspects. On table 1 we can verify that Jitter(%) is very similar from
 Jitter(ABS), they derive from pitch period sequences, and because of their similarity
 (correlation) only one of them will really contribute to the classification, consequently
 the other one should be removed.
 
-We divide the calculation of feature by selecting the 10 most correlated features (ab-
-solute value of correlation between feature and output label). We sort the correlation
+We divide the calculation of feature by selecting the 10 most correlated features (absolute 
+value of correlation between feature and output label). We sort the correlation
 based on its absolute value because zero correlation means almost no information,
 whereas -1.0 or +1.0 mean the same amount of information, however, in different directions.
 Analysing carefully through all features and calculating all the correlations, we
@@ -136,7 +138,7 @@ Evaluating the model can be really trick, since we usually split the data set in
 training and testing and we evaluate the performance based on a error metric to
 determine the accuracy. However this method is not reliable enough with the amount
 of data provided. If we apply the k-fold cross validation method we may increase the
-reliability of the accuracy, avoiding over-fitting the data. It basically divides each data
+reliability of the accuracy, avoiding overfitting the data. It basically divides each data
 into folds and ensures that each fold is used as a test. For the K-fold, the data is split
 into K folds, in our case we decided to use K=10, so our data set is split into 10 folds.
 In the first iteration, the first fold is used to to test the model and the rest to train
@@ -148,9 +150,7 @@ the model.
 To implement all the classifications on this work, we used the scikit-learn features
 for Python [1]. Scikit-learn is an open source machine learning library that supports
 supervised and unsupervised learning and provides tools for model fitting, model se-
-lection and evaluation. To evaluate the data I decided to use four classification models
-that are basically the state-of-art in machine learning techniques: support vector ma-
-chine, random forest, neural network, and XGBoost.
+lection and evaluation. 
 
 ### The Dataset
 The dataset[5] used is composed of a range of biomedical voice measurements from 31
@@ -178,12 +178,12 @@ The main objective here was to separate the data set the best possible way by
 selecting a hyper-plane with the maximum possible margin between the vectors and
 the data points. The algorithm is implemented using a kernel that will shape the
 given data on the correct form. In this work, the best option would be the radial basis
-function kernel (also known as Gaussian kernel). It can map an input space in innite
-dimensional space.
+function kernel (also known as Gaussian kernel). It can map an input space in "infinite
+dimensional space".
 
 ### Random Forest
-Random forest [2] is another supervised learning algorithm used in classification prob-
-lems. It creates decision trees on random data samples, receives a prediction from each
+Random forest [2] is another supervised learning algorithm used in classification problems. 
+It creates decision trees on random data samples, receives a prediction from each
 tree and select the best solution. It also adds additionally randomness to the selected
 model and it searches for the best feature among our subset, this way it generally
 results in better models. The difference between random forest and decision trees is
@@ -191,14 +191,14 @@ that the process of finding the root node and splitting the features will be a r
 process on random forests. First we create the random forest and then we make the a
 prediction of the classifiers. The algorithm is shown below:
 
- Select N features from a total of Z features
+Select N features from a total of Z features
 * Of all the selected N features it will calculate a node d using the best split point
 * Split nodes into more nodes using the best split point
 * Repeat the items above until the best number D of nodes has been reached
 * Build the forest repeating the steps for x number of times to create x number of
 trees
 
-There were some important parameter to check while implementing the algorithm.One
+There were some important parameter to check while implementing the algorithm. One
 of those is the number of trees we want to implement, so the average of predictions
 was measured multiple times guaranteeing that we would have the optimal number of
 trees.
@@ -224,19 +224,66 @@ using backpropagation, a procedure that adjusts the weights repeatedly so we can
 minimize the diffence between the output and the desired output. We also test
 repeatedly several numbers of hidden layers so it can achieve the best accuracy.
 We set the parameters of our NN to get the best value. To optimize our network we
-chose as our solver the Adam Algorithm [3], a very popular deep learning optimization method. The activation function is responsible for transforming the sum of the inputs
+chose as our solver the Adam Algorithm [3], a very popular deep learning optimization method. 
+The activation function is responsible for transforming the sum of the inputs
 from the nodes into the activation of the node. In this work, we explore the rectifi
 linear activation function (relu - a linear function that will output the input if positive,
 otherwise, will output zero), hyperbolic tangent, and logistic function.
 
 ### XGBoost
 XGBoost [4] is an optimized gradient boosting library designed to be efficient, 
-exible nd portable. It implements machine learning algorithms under the gradient boosting
-framework. A gradient boosting framework is a technique for regression and classification problems, that produces a prediction model in the form of decision trees. New
+exible and portable. It implements machine learning algorithms under the gradient boosting
+framework. A gradient boosting framework is a technique for regression and classification 
+problems, that produces a prediction model in the form of decision trees. New
 models are created predicting residual errors of the prior models, eventually this errors
 are added to build the final prediction and it uses gradient descendent to minimize the
 when adding new models (also known as weak model algorithm). Its algorithm was
 created to reach for efficiency of compute time and memory resources.
+
+### Naive Bayes
+Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ 
+theorem with the “naive” assumption of conditional independence between every pair of 
+features given the value of the class variable. Abstractly, naive Bayes is a conditional 
+probability model, features are represented by a vector X = (x1, x2, ..., xn). The model 
+assigns probabilities p(Ck | x1, x2, ..., xn) for every k output. In this case we calculate
+only one output, corresponding to the diagnosis of the patient. Using Bayes' theorem, the 
+conditional probability can be decomposed as:
+
+p(Ck|x) = p(Ck) * p(x|Ck) / p(x)
+
+or:
+
+Posterior = Prior * Likelihood / Evidence
+
+In spite of their apparently over-simplified assumptions, naive Bayes classifiers 
+have worked quite well in many real-world situations, famously document classification 
+and spam filtering. They require a small amount of training data to estimate the necessary 
+parameters. In this case we applied Gaussian Naive Bayes, assuming that that the continuous 
+values associated with each class are distributed according to a normal (or Gaussian) 
+istribution. Despite the fact that the far-reaching independence assumptions are often 
+inaccurate, the naive Bayes classifier has several properties that make it surprisingly 
+useful in practice. In particular, the decoupling of the class conditional feature 
+distributions means that each distribution can be independently estimated as a one-dimensional 
+distribution. This helps alleviate problems stemming from the curse of dimensionality, 
+such as the need for data sets that scale exponentially with the number of features. 
+
+### TPOT
+
+TPOT is an open-source library for performing AutoML in Python. It makes use of the popular 
+Scikit-Learn machine learning library for data transforms and machine learning algorithms 
+and uses a Genetic Programming stochastic global search procedure to efficiently discover 
+a top-performing model pipeline for a given dataset. TPOT uses techniques for automatically 
+discovering well-performing models for predictive modeling tasks with very little user
+involvement. In short, TPOT optimizes machine learning pipelines using a version of genetic 
+programming (GP), a well-known evolutionary computation technique for automatically 
+constructing computer programs. The GP algorithm generates 100 random tree-based pipelines 
+and evaluates their balanced cross-validation accuracy on the data set. For every generation 
+of the GP algorithm, the algorithm selects the top 20 pipelines in the population according 
+to the NSGA-II selection scheme.  Each of the top 20 selected pipelines produce five copies 
+(i.e., offspring) into the next generation’s population, 5% of those offspring cross over 
+with another offspring using one-point crossover, then 90% of the remaining unaffected 
+offspring are randomly changed by a point, insert, or shrink mutation (1/3 chance of each).
+
 
 ## Results 
 
@@ -245,12 +292,12 @@ crossvalidation. By accuracy we mean the percentage of labels that were correctl
 classified.
 
 ### Support Vector Machine
-In the Figure 2, we present the accuracy of the SVM model with Radial Basis Func-
-tion as a kernel. The "Selected Features Index" axis represents all the possible 210
-combinations of selected features. The maximum accuracy obtained is 85.89% by us-
-ing two features, PPE MDVPShimmer and PPE ShimmerAPQ5. It can be seen that
-depending on the selection, the accuracy drastically changes, therefore, it is important
-to make a proper selection of features.
+In the Figure 2, we present the accuracy of the SVM model with Radial Basis Function 
+as a kernel. The "Selected Features Index" axis represents all the possible 210
+combinations of selected features. The maximum accuracy obtained is 85.89% by using 
+two features, PPE MDVPShimmer and PPE ShimmerAPQ5. It can be seen thatdepending on 
+the selection, the accuracy drastically changes, therefore, it is important to make 
+a proper selection of features.
 
 ![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/SVM.png)
 
@@ -303,6 +350,24 @@ the following features Spread1, Spread2 and MDVPFo.
 
 Figure 7.: XGBoost accuracy vs Selected Features Index [ht]
 
+### Naive Bayes
+The program generates Naive Bayes models based on the combinatory of the selected features. 
+Starting with one feature, the program increases the number of features and test all possible 
+combinatons. Figure 8 shows the performance of each model, the best model with an accuracy of 
+84.39% uses only one feature RPDE, the feature with the highest correla. 
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/NaiveBayes.png)
+
+Figure 8.: Naive Bayes accuracy vs Selected Features Index [ht]
+
+### TPOT
+We define the classifier to have a hundred generation with a population of a hundred each
+to generate the different pipeline models. The best pipeline after the execution of the program 
+is Gradient Boosting Classifier, with an accuracy of 85.25%.
+
+![](https://github.com/MayaraGimenes/CISC849_FinalProject/blob/main/Pictures/TPOT.png)
+
+Figure 9.: TPOT Accuracy vs Number of Generations
 
 ## Conclusion
 In the Table 2 we can see the best performance obtained by each machine learn-
@@ -324,7 +389,7 @@ Table 2.: Comparison of best accuracy obtained by each model
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/MayaraGimenes/CISC849_FinalProject/issues) for a list of proposed features (and known issues).
 
 
 
@@ -339,21 +404,22 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## 
 
 
 <!-- LICENSE -->
-## License
+<!-- ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See `LICENSE` for more information. -->
 
 
 
 <!-- CONTACT -->
-## Contact
+<!-- ## Contact
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
 
 
 
