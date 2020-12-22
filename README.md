@@ -455,6 +455,45 @@ Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.c
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name) -->
 
 
+## References
+<!-- References -->
+<a id="1">[1]</a> 
+Pedregosa, F. and Varoquaux, G. and Gramfort, A. and Michel, V.
+         and Thirion, B. and Grisel, O. and Blondel, M. and Prettenhofer, P.
+         and Weiss, R. and Dubourg, V. and Vanderplas, J. and Passos, A. and
+         Cournapeau, D. and Brucher, M. and Perrot, M. and Duchesnay, E.Scikit-learn: Machine Learning in {P}ython, Journal of Machine Learning Research; 2011 Volume 12, p. 2825--2830
+
+<a id="2">[2]</a>       
+Breiman, “Random Forests”, Machine Learning, 45(1), 5-32, 2001.
+
+<a id="3">[3]</a> 
+Diederik P. Kingma and Jimmy Lei Ba. Adam : A method for stochastic optimization. 2014. arXiv:1412.6980v9
+
+<a id="4">[4]</a> 
+"GitHub project webpage - https://github.com/dmlc/xgboost".
+
+<a id="5">[5]</a> 
+'Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection', 
+Little MA, McSharry PE, Roberts SJ, Costello DAE, Moroz IM. 
+BioMedical Engineering OnLine 2007, 6:23 (26 June 2007)
+
+<a id="6">[6]</a> 
+A. K. Ho, R. Iansek, C.Marigliani, J. L. Bradshaw, and S. Gates, “Speech
+impairment in a large sample of patients with Parkinson’s disease,” Behav.
+Neurol., vol. 11, pp. 131–137, 1998.
+
+<a id="7">[7]</a> 
+J. A. Logemann, H. B. Fisher, B. Boshes, and E. R. Blonsky, “Frequency
+and co-occurrence of vocal-tract dysfunctions in speech of a large sample
+of Parkinson patients,” J. Speech. Hear. Disord., vol. 43, pp. 47–57, 1978.
+
+<a id="8">[8]</a> 
+J. R. Duffy, Motor Speech Disorders: Substrates, Differential Diagnosis,
+and Management, 2nd ed. St. Louis, MO: Elsevier, 2005.
+
+<a id="9">[9]</a> 
+Max A. Little, Member, IEEE, Patrick E. McSharry, Eric J. Hunter, Jennifer Spielman, and Lorraine O. Ramig. Suitability of Dysphonia Measurements
+for Telemonitoring of Parkinson’s Disease;IEEE TRANSACTIONS ON BIOMEDICAL ENGINEERING, VOL. 56, NO. 4, APRIL 2009.
 
 <!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
