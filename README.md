@@ -1,8 +1,9 @@
 <!-- PROJECT LOGO -->
 <br />
 
-  <h1 align="center">CISC849, a graduate level seminar course offered at the University of Delaware, Fall 2020</h1> 
+  
   <h1 align="center">Parkinson's Disease Prediction Based on <br />Modern Machine Learning Methods</h1>
+  <h2 align="center">CISC849, a graduate level seminar course offered at the University of Delaware, Fall 2020</h2> 
 
   <p align="center">
     Mayara Gimenes De Souza <br />
