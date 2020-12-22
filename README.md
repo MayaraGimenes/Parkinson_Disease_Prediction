@@ -66,7 +66,6 @@ using kernel support vector machine and XGBoost.
 
 ### Key Words
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Python](https://www.python.org)
 * [scikit-learn](https://scikit-learn.org/stable/)
 
